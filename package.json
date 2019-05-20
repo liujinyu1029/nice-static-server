@@ -1,0 +1,21 @@
+{
+  "name": "nice-static-serve",
+  "version": "0.0.1",
+  "description": "nice系统--静态资源服务器端-上传服务器",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-body": "^4.1.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "devDependencies": {}
+}
