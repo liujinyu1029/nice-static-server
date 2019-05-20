@@ -3,7 +3,6 @@ const _static_serve = require('koa-static');
 const path = require('path')
 const cors = require('koa2-cors'); //应答跨域
 const koaBody = require('koa-body');
-// const uploadFile = require('./middleware/uploadFile')
 const uploadResources = require('./middleware/uploadResources')
 const app = new Koa()
 const {origin,port} = require('./config')
@@ -30,8 +29,6 @@ app.use(koaBody({
 // 【静态资源serve】
 app.use(_static_serve(path.join(__dirname) + '/web'))
 
-// 【上传接收】图片、文档等  独立file 
-// app.use(uploadFile.routes())
 // 【上传接收】spa打包资源上传 文件夹上传 单个资源上传 
 app.use(uploadResources.routes())
 
