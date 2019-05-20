@@ -5,7 +5,8 @@ nice-static-server -- 静态服务器端代码
 
 可通过`http://locahost:9001/resources/xx/xx.js`访问资源
 
-配套资源上传工具  `nice-upload`
+配套资源上传工具  [nice-upload](https://github.com/liujinyu1029/nice-upload)
+
 
 ## Install
 
